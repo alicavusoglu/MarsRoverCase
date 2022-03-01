@@ -33,6 +33,8 @@ namespace MarsRoverCase.Domain
         private void TurnLeft()
         {
             var currentDirection = (int)this._direction;
+
+            //North Enum Number is 1, increases as clockwise
             switch (currentDirection)
             {
                 case 1:
@@ -47,6 +49,8 @@ namespace MarsRoverCase.Domain
         private void TurnRight()
         {
             var currentDirection = (int)this._direction;
+
+            //North Enum Number is 1, increases as clockwise
             switch (currentDirection)
             {
                 case 4:
@@ -101,7 +105,7 @@ namespace MarsRoverCase.Domain
 
                 if (this._x < 0 || this._x > _plateau.UpperRightX || this._y < 0 || this._y > _plateau.UpperRightY)
                 {
-                    throw new Exception($"Oops! Position can not be beyond bounderies (0 , 0) and ({_plateau.UpperRightX} , {_plateau.UpperRightY})");
+                    throw new Exception($"There is no more place to do this movement");
                 }
             }
         }
