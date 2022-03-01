@@ -5,7 +5,7 @@ NASA rover movement controller
 Developed this solution for a case study.
 
 # DDD Principles 
-I use a rover and plateau as domain models. For this case, rover is an aggregate root. But there was no need for Aggregate Root's abilities as domain events or any other extra abilities. 
+I use a rover and plateau as domain models. For this case, rover is an aggregate root. But in this case, there was no need for Aggregate Root's abilities as domain events or any other extra abilities. 
 
 A Handler created for drive rover on plateau. This handler positioned as an application layer.
 
